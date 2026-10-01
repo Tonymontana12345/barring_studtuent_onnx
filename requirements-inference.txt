@@ -1,0 +1,2 @@
+# CPU inference only; Python 3.11. No PyTorch/MOMENT installation required.
+-e .

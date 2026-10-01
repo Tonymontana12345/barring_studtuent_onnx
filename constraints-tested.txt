@@ -1,0 +1,16 @@
+# Versions observed in the validated local macOS ARM64 / Python 3.11 environment.
+# MOMENT 0.1.4 pins older numpy/transformers/huggingface-hub metadata.
+# Use uv's explicit overrides (pip -c cannot override conflicting exact pins):
+# uv pip install -r requirements.txt --override constraints-tested.txt
+torch==2.14.0
+momentfm==0.1.4
+peft==0.21.0
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.2
+onnx==1.23.0
+onnxruntime==1.30.0
+onnxscript==0.7.2
+transformers==4.57.6
+huggingface-hub==0.36.2
+safetensors==0.8.0

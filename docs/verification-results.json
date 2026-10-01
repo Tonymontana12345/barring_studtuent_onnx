@@ -1,0 +1,136 @@
+{
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.11.16",
+  "existing_student": {
+    "correct": 251,
+    "total": 252,
+    "accuracy": 0.996031746031746,
+    "confusion_matrix": [
+      [
+        83,
+        1
+      ],
+      [
+        0,
+        168
+      ]
+    ]
+  },
+  "existing_onnx": {
+    "correct": 251,
+    "total": 252,
+    "accuracy": 0.996031746031746,
+    "confusion_matrix": [
+      [
+        83,
+        1
+      ],
+      [
+        0,
+        168
+      ]
+    ]
+  },
+  "existing_onnx_max_error": 3.5762786865234375e-07,
+  "existing_teacher": {
+    "correct": 252,
+    "total": 252,
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        84,
+        0
+      ],
+      [
+        0,
+        168
+      ]
+    ],
+    "dataset_fingerprint": "867ade5eaee5da475bfe74d55eb07072b97080e16530668c6e37c78294ec3548"
+  },
+  "fresh_export": {
+    "checkpoint_sha256": "24ef0adaa7328e79ee6a8dd7c373ef057e0fb0febc7016760d673bb041a1ba81",
+    "cases": 12,
+    "max_absolute_error": 1.1920928955078125e-06,
+    "onnx": "outputs/verification/run-aof38agm/student.onnx"
+  },
+  "raw_preprocessing": {
+    "K001": {
+      "windows": 7,
+      "label": 0
+    },
+    "KA04": {
+      "windows": 7,
+      "label": 1
+    },
+    "KB24": {
+      "windows": 7,
+      "label": 1
+    },
+    "KI03": {
+      "windows": 7,
+      "label": 1
+    }
+  },
+  "legacy_k_ka_preprocess_max_error": {
+    "K001": 0.0,
+    "KA04": 0.0
+  },
+  "teacher_training_smoke": {
+    "checkpoint": "outputs/verification/run-aof38agm/teacher/teacher_lora_best.pt",
+    "best_validation_accuracy": 0.5,
+    "updated_lora_b_matrices": 24
+  },
+  "cache_smoke": {
+    "train": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "validation": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "student_training_smoke": {
+    "checkpoint": "outputs/verification/run-aof38agm/student/student_kd_best.pt",
+    "best_validation_accuracy": 0.5
+  },
+  "student_smoke_evaluation": {
+    "correct": 1,
+    "total": 2,
+    "accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "dataset_fingerprint": "cca5472a7a82b841c4264404638120bb3c9aa3151a6e840937337b226cabe74f"
+  }
+}

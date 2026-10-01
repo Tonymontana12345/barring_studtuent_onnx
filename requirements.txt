@@ -1,0 +1,3 @@
+# Training installation requires uv overrides; see README.md.
+# uv pip install -r requirements.txt --override constraints-tested.txt
+-e .[train,analysis]
